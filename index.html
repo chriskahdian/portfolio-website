@@ -3,51 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chris Kahdian - Portfolio</title>
+  <title>Chris Kahdian | Web Dev Portfolio</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <header class="page-header">
-    <img src="http://via.placeholder.com/200x70" alt="logo" class="page-header__item">
-    <nav class="page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-        </li>
-        <li>
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li>
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-        <li>
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-<div class="profile">
-  <img src="img/chris.jpg" alt="A photograph of me" class="profile__portrait">
-  <h1>Hello World!</h1>
-  <p>
-    My name is Chris Kahdian. I am a <span>web</span> developer from Los Angeles
-  </p>
-  <a href="#">Check out some of my code</a>
-</div>
-<a href="#">Default Link</a>
-<button type="button">Default Button</button>
-<button class="button_secondary">Secondary Button</button>
-<footer class="page-footer">
-  <p>Find me on</p>
-  <div class="social-media">
-    <a href="url"><img src="img/github.svg" alt="Github"></a>
-    <a href="url"><img src="img/twitter.svg" alt="Twitter"></a>
-    <a href="url"><img src="img/linkedin.svg" alt="Linkedin"></a>
-  </div>
-</footer>
-<script src="js/tota11y.min.js"></script>
+
+  <nav>
+    <h1 id="pageTitle">Chris Kahdian | Full Stack Web Dev</h1>
+    <ul>
+      <li><a id="homeLink" href="#home">Home</a></li>
+      <li><a id="aboutLink" href="#about">About</a></li>
+      <li><a id="portfolioLink" href="#portfolio">Portfolio</a></li>
+      <li><a id="contactLink" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="gridDiv">
+      <img src="img/chris.jpg" alt="A photograph of me" class="profilePortrait">
+      <article id="personalAd">
+        <p>Hello,</p>
+        <p>My name's Chris. Ex-accountant, business side inherent, now following passion for programming. Practicing</p>
+        <p>full stack web development</p>
+      </article>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="gridDiv">
+      <article id="personalHistory">
+        <p>Native to Los Angeles, California. Graduated UC Santa Barbara, BA Economics and Accounting. Established successful accounting career, quit to pursue new career in tech.</p>
+      </article>
+      <article id="hobbies">
+        <p>My free time includes:</p>
+        <p>running</p>
+        <p>weightlifting</p>
+        <p>spending time with family</p>
+        <p>reading</p>
+        <p>TV/film</p>
+        <p>gaming</p>
+      </article>
+      <article>
+        linkedin
+      </article>
+    </div>
+  </section>
+  
+  <hr>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gridDiv">
+      <article class="grid__item">
+        <h3>Grid Item Title</h3>
+        <p>Project description Project description Project description Project description Project description Project description Project description Project description </p>
+        <a href="#">Project link</a>
+      </article>
+      <article class="grid__item">
+        <h3>Grid Item Title</h3>
+        <p>Project description Project description Project description Project description Project description Project description Project description Project description </p>
+        <a href="#">Project link</a>
+      </article>
+      <article class="grid__item">
+        <h3>Grid Item Title</h3>
+        <p>Project description Project description Project description Project description Project description Project description Project description Project description </p>
+        <a href="#">Project link</a>
+      </article>
+      <article class="grid__item">
+        <h3>Grid Item Title</h3>
+        <p>Project description Project description Project description Project description Project description Project description Project description Project description </p>
+        <a href="#">Project link</a>
+      </article>
+    </div>
+  </section>
+  
+  <hr>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="gridDiv">
+      <article>
+        Christopher Kahdian<br>
+        Address line 1<br>
+        Address line 2<br>
+        Tel<a href="tel:+1818phonenumber">+1-818-phonenumber</a><br>
+        Skype<a href="skype:live:name">live:name</a><br>
+        <a href="mailto:name@gmail.com">name@gmail.com</a><br>
+        <a href="mailto:name@gmail.com">Contact Me</a>
+      </article>
+      <article>
+        <form action="" method="post" id="contact-form">
+          <label class="standard-label" for="contact-email">E-mail: </label>
+          <input type="email" id="contact-email" required>
+          <label class="standard-label">Telephone: </label>
+          <input type="tel">
+          <label class="standard-label">Message: </label>
+          <textarea maxlength="240" required></textarea>
+          <input type="submit" value="Send message">
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+
 </body>
 </html>

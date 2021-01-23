@@ -1,3 +1,98 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+  /* -moz-box-sizing: border-box; 
+  box-sizing: border-box;  */
+  }
+
+body { 
+font-family: 'Roboto', sans-serif; 
+background-image: linear-gradient(white, rgba(232, 240, 255, 0.300), white);
+}
+
+/* h1,h2,h3,h4,h5,h6,a{
+  margin:0;
+} */
+
+a {
+color: inherit;
+}
+
+nav{
+  top: 0%;
+  width: 100%;
+  position: fixed;
+  background-image: linear-gradient(white, rgb(255, 252, 237));
+  padding: 22px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#pageTitle{
+  margin-bottom: 10px;
+}
+
+nav ul li{
+  list-style: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+nav ul li a:hover{
+  padding: 12px;
+  border-bottom: none;
+}
+
+nav ul li a{
+  margin: 8px;
+  padding: 10ps;
+  font-size: 1.2 em;
+  text-decoration: none;
+  /* transition: all 0.3s ease-out; */
+}
+
+section{
+  margin: 10px;
+}
+
+#home{
+  margin-top: 100px;
+}
+
+.gridDiv{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+section h2{
+  text-align: center;
+}
+
+article{
+  border: 1px solid black;
+  padding: 5px;
+  width: 95%
+}
+
+p{
+  line-height: 1.5;
+}
+
+hr{
+  border-top: 1px solid black;
+}
+
+
+
+
+
+
+
 /*
 Colors used
 
@@ -5,7 +100,7 @@ Text Color (Dark Gray): #2b2b2b;
 Primary Color (Purple): #357b70
 Secondary Color (Orange): #e0b354
 */
-
+/* 
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
@@ -246,4 +341,4 @@ button:focus,
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
+} */
