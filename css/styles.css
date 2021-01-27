@@ -73,22 +73,51 @@ section h2{
   text-align: center;
 }
 
+#profilePortrait{
+  border-radius: 50%;
+  border: 1px solid rgb(232, 240, 255);
+}
+
 article{
-  border: 1px solid black;
+  background-image: linear-gradient(white, rgb(255, 252, 237));
+  border: 1px solid rgb(232, 240, 255);
   padding: 5px;
   width: 95%
 }
 
 p{
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 hr{
   border-top: 1px solid black;
 }
 
+#hobbiesTitle{
+  text-align: center;
+}
 
+.smallGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+.smallGrid p{
+  margin-left: 15px;
+}
+
+ul{
+  list-style-position: inside;
+  line-height: 1.75;
+}
+
+li span{
+  margin-left: -15px;
+}
+
+#linkIcons{
+  text-align: center;
+}
 
 
 
