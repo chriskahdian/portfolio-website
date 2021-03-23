@@ -38,10 +38,10 @@ nav ul li{
   display: inline-block;
 }
 
-nav ul li a:hover{
+/* nav ul li a:hover{
   padding: 12px;
   border-bottom: none;
-}
+} */
 
 nav ul li a{
   margin: 8px;
