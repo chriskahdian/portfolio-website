@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chris Kahdian | Web Dev Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="nav-list nav-list-mobile">
+        <li><a id="aboutLink" href="#about">About</a></li>
+        <li><a id="portfolioLink" href="#portfolio"><h1 id="pageTitle">Chris Kahdian | Full Stack Web Dev</h1></a></li>
+        <li><a id="contactLink" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>ABOUT</h2>
+    <div class="gridDiv">
+      <img src="img/chris.jpg" alt="A photograph of me" id="profilePortrait">
+      <article id="personalAd">
+        <p>Hello!</p>
+        <br>
+        <p>My name's Chris. Ex-accountant, business-side natural, now pursuing interests in programming. Native to Los Angeles, graduated UC Santa Barbara with a BA in Economics and Accounting; concluded accounting career to study at <a href="https://careerfoundry.com/">CareerFoundry</a> and establish tech career in full stack web development.</p>
+      </article>
+      <article id="hobbies">
+        <div  id="hobbiesTitle"><p>My free time includes:</p></div>
+        <ul id="hobbiesList">
+          <li>trail running</li>
+          <li>weightlifting</li>
+          <li>family/friends</li>
+          <li>reading</li>
+          <li>TV/film</li>
+          <li>gaming</li>
+        </ul>
+      </article>
+      <article>
+        <p>Please feel free to check my:</p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/christopher-kahdian/"><img class="linkIcon" src="img/linkedin.svg" alt="Linkedin"></a> work history, education details</li>
+          <li><a href="https://github.com/chriskahdian"><img class="linkIcon" src="img/github.svg" alt="Github"></a> projects' work and code</li>
+          <li><a href="https://instagram.com/chriskahdian"><img class="linkIcon" src="img/instagram.svg" alt="Instagram"></a> since it's out there, I guess</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>PORTFOLIO</h2>
+    <div class="gridDiv">
+      <article>
+        <h3>Pokedex Pokemon Rolodex</h3>
+        <p>Showcases usage of Pokemon's official API to display adorable little creatures and their stats.</p>
+        <a href="https://chriskahdian.github.io/pokedex-pokemon-rolodex/">Pokedex Pokemon Rolodex</a>
+      </article>
+      <article>
+        <h3>MoviesMoviesMovies</h3>
+        <p>Full stack project fetching via original API info from original database of my favorite movies; users can create accounts to view movies, directors, genres, and add account favorites.</p>
+        <a href="https://moviesmoviesmovies.herokuapp.com/client/">MoviesMoviesMovies</a>
+      </article>
+      <article>
+        <h3>asdf Quizzes</h3>
+        <p>App featuring Angular to run a user through their choice of a number of short, fun quizzes</p>
+        <a href="https://chriskahdian.github.io/asdf-quizzes/">asdf Quizzes</a>
+      </article>
+      <article>
+        <h3>asdf To-do</h3>
+        <p>Demonstration of Vue framework usage in which user can note items they must accomplish today, check them off, and reorder them.</p>
+        <a href="https://chriskahdian.github.io/asdf-to-do/">asdf To-do</a>
+      </article>
+      <article>
+        <h3>Meet App</h3>
+        <p>Progressive Web App exhibiting AWS Lambda serverless functionality, OAuth Google account authorization, and Google API interaction to display Wed Dev related events around the world; users log in using Google account, and can filter by city, see event details, and more, with data visualized</p>
+        <a href="https://chriskahdian.github.io/meet/">Meet App</a>
+      </article>
+      <article>
+        <h3>Chat App</h3>
+        <p>iOS/Android chatroom app to which users can log in and send messages, pictures, and their location, with messages stored both in the cloud and locally for offline device usage.</p>
+        <a href="https://chriskahdian.github.io/meet/">Meet App</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>CONTACT</h2>
+    <div class="gridDiv">
+      <article>
+        Christopher Kahdian<br>
+        Address line 1<br>
+        Address line 2<br>
+        Tel<a href="tel:+1818phonenumber">+1-818-phonenumber</a><br>
+        Skype<a href="skype:live:name">live:name</a><br>
+        <a href="mailto:name@gmail.com">name@gmail.com</a><br>
+        <a href="mailto:name@gmail.com">Contact Me</a>
+      </article>
+      <article>
+        <form action="" method="post" id="contact-form">
+          <label class="standard-label" for="contact-email">E-mail: </label>
+          <input type="email" id="contact-email" required>
+          <label class="standard-label">Telephone: </label>
+          <input type="tel">
+          <label class="standard-label">Message: </label>
+          <textarea maxlength="240" required></textarea>
+          <input type="submit" value="Send message">
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>

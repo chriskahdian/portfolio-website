@@ -12,99 +12,88 @@
 </head>
 <body>
 
-  <nav>
-    <h1 id="pageTitle">Chris Kahdian | Full Stack Web Dev</h1>
-    <ul>
-      <li><a id="homeLink" href="#home">Home</a></li>
-      <li><a id="aboutLink" href="#about">About</a></li>
-      <li><a id="portfolioLink" href="#portfolio">Portfolio</a></li>
-      <li><a id="contactLink" href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="home">
-    <div class="gridDiv">
-      <img src="img/chris.jpg" alt="A photograph of me" id="profilePortrait">
-      <article id="personalAd">
-        <p>Hello,</p>
-        <p>My name's Chris. Ex-accountant, business side natural, now following passion for programming. Practicing</p>
-        <p>full stack web development</p>
-      </article>
-    </div>
-  </section>
-
-  <hr>
+  <header>
+    <nav>
+      <ul class="nav-list nav-list-mobile">
+        <li><a id="aboutLink" href="#about">About</a></li>
+        <li><a id="portfolioLink" href="#portfolio"><h1 id="pageTitle">Chris Kahdian | Web Dev</h1></a></li>
+        <li><a id="contactLink" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <section id="about">
-    <h2>About</h2>
-    <div class="gridDiv">
-      <article id="personalHistory">
-        <p>Native to Los Angeles, California.</p>
-        <p>Graduated UC Santa Barbara, BA Economics and Accounting.</p>
-        <p>Concluded accounting career to study at <a href="https://careerfoundry.com/">CareerFoundry</a> and establish tech career.</p>
-      </article>
-      <article id="hobbies">
-        <div  id="hobbiesTitle"><p>My free time includes:</p></div>
-        <div class="smallGrid">
-          <p>running</p>
-          <p>weightlifting</p>
-          <p>family/friends</p>
-          <p>reading</p>
-          <p>TV/film</p>
-          <p>gaming</p>
-        </div>
-      </article>
-      <article>
-        <ul>
-          <li><span><a href="https://www.linkedin.com/in/christopher-kahdian/">LinkedIn</a>: work history, education details</span></li>
-          <li><span><a href="https://github.com/chriskahdian">Github</a>: project work and code</span></li>
-        </ul>
-        <div id="linkIcons">
-          <a href="https://www.linkedin.com/in/christopher-kahdian/"><img src="img/linkedin.svg" alt="Linkedin"></a>
-          <a href="https://github.com/chriskahdian"><img src="img/github.svg" alt="Github"></a>
-        </div>
-      </article>
-    </div>
+    <article id="pictureArticle">
+      <img src="img/chris.jpg" alt="A photograph of me" id="picture">
+      <p id="pictureCaption">a picture of me - hi!</p>
+    </article>
+    <article class="aboutArticle">
+      <p>Hello!</p>
+      <br>
+      <p>My name's Chris. Ex-accountant, business-side trained, pursuing interest in programming. Native to Los Angeles, graduated UC Santa Barbara (BA Economics and Accounting), concluded accounting career to study at <a href="https://careerfoundry.com/">CareerFoundry</a> and establish tech career in full stack web development.</p>
+      <br>
+      <p>Please feel free to check my:</p>
+      <ul>
+        <li><span><a href="https://www.linkedin.com/in/christopher-kahdian/"><img class="linkIcon" src="img/linkedin.svg" alt="Linkedin"></a> work history, education details</span></li>
+        <li><span><a href="https://github.com/chriskahdian"><img class="linkIcon" src="img/github.svg" alt="Github"></a> projects' work and code</span></li>
+        <li><span><a href="https://instagram.com/chriskahdian"><img class="linkIcon" src="img/instagram.svg" alt="Instagram"></a> since it's out there, I guess</span></li>
+      </ul>
+    </article>
   </section>
-  
-  <hr>
 
   <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="gridDiv">
-      <article>
-        <h3>Pokedex Pokemon Rolodex</h3>
-        <p>An example of API usage from a separate entity (Pokemon's official API).</p>
-        <a href="https://chriskahdian.github.io/pokedex-pokemon-rolodex/">Pokedex Pokemon Rolodex</a>
-      </article>
-      <article>
-        <h3>MoviesMoviesMovies</h3>
-        <p>A React app with user functionality to interact with a movie database.</p>
-        <a href="https://moviesmoviesmovies.herokuapp.com/client/">MoviesMoviesMovies</a>
-      </article>
-      <article>
-        <h3>asdf Quizzes</h3>
-        <p>An Angular app showcasing page template application to different quizzes.</p>
-        <a href="https://chriskahdian.github.io/asdf-quizzes/">asdf Quizzes</a>
-      </article>
-      <article>
-        <h3>asdf To-do</h3>
-        <p>A Vue app showcasing practical functionality in the form of an organizable to-do list.</p>
-        <a href="https://chriskahdian.github.io/asdf-to-do/">asdf To-do</a>
-      </article>
-      <article>
-        <h3>Meet App</h3>
-        <p>A Progressive Web App</p>
-        <a href="https://chriskahdian.github.io/meet/">Meet App</a>
-      </article>
-    </div>
+    <article class="gridOdds">
+      <h3>Pokedex Pokemon Rolodex</h3>
+      <p>Showcases usage of Pokemon's official API to display adorable little creatures and their stats.</p>
+      <p>Tech: HTML, CSS, Javascript, API, JQuery, Bootstrap</p>
+      <a href="https://chriskahdian.github.io/pokedex-pokemon-rolodex/">Live project</a> | 
+      <a href="https://github.com/chriskahdian/pokedex-pokemon-rolodex">Github</a>
+      <img src="img/ssPokemon.jpg" class="projectScreenshot">
+    </article>
+    <article>
+      <h3>MoviesMoviesMovies</h3>
+      <p>Full stack project fetching via original API info from original database of my favorite movies; users can create accounts to view movies, directors, genres, and add account favorites.</p>
+      <p>Tech: MongoDB, Express, React, Node.js, Parcel, React Bootstrap, Heroku, REST, Postman, SQL, SPA, axios, bcrypt, body-parser, cors, jsonwebtoken, lodash, morgan, passport, redux</p>
+      <a href="https://moviesmoviesmovies.herokuapp.com/client/">Live project</a> | 
+      <a href="https://github.com/chriskahdian/moviesmoviesmovies">Github</a>
+      <img src="img/ssMovies.jpg" class="projectScreenshot">
+    </article>
+    <article class="gridOdds">
+      <h3>asdf Quizzes</h3>
+      <p>App featuring Angular to run a user through their choice of a number of short, fun quizzes</p>
+      <p>Tech: Angular, Angular Material, eslint</p>
+      <a href="https://chriskahdian.github.io/asdf-quizzes/">Live project</a> | 
+      <a href="https://github.com/chriskahdian/asdf-quizzes">Github</a>
+      <img src="img/ssQuizzes.jpg" class="projectScreenshot">
+    </article>
+    <article>
+      <h3>asdf To-do</h3>
+      <p>Demonstration of Vue framework usage in which user can note items they must accomplish today, check them off, and reorder them.</p>
+      <p>Tech: Vue, Vue Material, eslint</p>
+      <a href="https://chriskahdian.github.io/asdf-to-do/">Live project</a> | 
+      <a href="https://github.com/chriskahdian/asdf-to-do">Github</a>
+      <img src="img/ssToDo.jpg" class="projectScreenshot">
+    </article>
+    <article class="gridOdds">
+      <h3>Meet App</h3>
+      <p>Progressive Web App exhibiting AWS Lambda serverless functionality, OAuth Google account authorization, and Google API interaction to display Wed Dev related events around the world; users log in using Google account, and can filter by city, see event details, and more, with data visualized</p>
+      <p>Tech: Google API, OAuth, AWS Lambda, React, Atatus, Recharts, nprogress, web-vitals, enzyme, jest-cucumber, puppeteer</p>
+      <a href="https://chriskahdian.github.io/meet/">Live project</a> | 
+      <a href="https://github.com/chriskahdian/meet">Github</a>
+      <img src="img/ssMeet.jpg" class="projectScreenshot">
+    </article>
+    <article>
+      <h3>Chat App</h3>
+      <p>iOS/Android chatroom app to which users can log in and send messages, pictures, and their location, with messages stored both in the cloud and locally for offline device usage.</p>
+      <p>Tech: React Native, Expo.io, GiftedChat, Asyncstorage, Firestore (database, authentication), Firebase Cloud Storage, JSDoc documentation, Android Studio, Android emulation, NetInfo offline usage, GPS location, eslint</p>
+      <a href="https://chriskahdian.github.io/meet/">Github</a>
+      <img src="img/ssChat.jpg" class="projectScreenshot">
+    </article>
   </section>
-  
-  <hr>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <div class="gridDiv">
+    <h2>CONTACT</h2>
+    <div>
       <article>
         Christopher Kahdian<br>
         Address line 1<br>
