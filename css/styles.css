@@ -29,7 +29,7 @@ a {
 /* HEADER */
 
 header{
-  height: 100px;
+  min-height: 50px;
   width: 100%;
   background-color: white;
 }
@@ -40,7 +40,7 @@ header a {
 
 nav{
   top: 0%;
-  height: 100px;
+  /* min-height: 50px; */
   width: 100%;
   position: fixed;
   background-image: linear-gradient(white, rgba(255, 252, 237,0.300));
@@ -53,11 +53,11 @@ nav{
 #pageTitle{
   /* border: solid; */
   font-size: 1.25em;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
-nav ul{
-  margin-top: 20px;
+#navList{
+  margin-top: 5px;
 }
 
 nav ul li{
@@ -89,9 +89,11 @@ nav .icon {
 
 
 /* ALL SECTIONS */
+/* force max 2 columns: about, portfolio sections' grid columns min-width 340px; about, portfolio sections' max-width (340*3)-1=1019px */
+
 
 section{
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -286,6 +288,9 @@ article:hover{
   nav a.icon {
     float: right;
     display: inline;
+    /* margin: 0 10px; */
+    margin-top: -20px;
+    margin-right: 5px;
   }
 }
 
