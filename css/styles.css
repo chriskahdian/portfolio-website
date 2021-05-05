@@ -210,6 +210,17 @@ article:hover{
   color: black;
 }
 
+.projectScreenshot{
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projectScreenshot img{
+  max-height: 400px;
+  max-width: 100%;
+}
+
 .projectName a{
   color: black;
 }
@@ -220,21 +231,16 @@ article:hover{
 
 .projectTech{
   margin: 1.5em;
-  font-size: 0.7em;
+  font-size: 0.8em;
+}
+
+.techHeading{
+  font-weight: 900;
 }
 
 .projectLinks{
   margin: 1.5em;
   text-align: center;
-}
-
-.projectScreenshot{
-  width: 85%;
-  margin: 0 auto;
-}
-
-.projectScreenshot img{
-  width: 100%;
 }
 
 
