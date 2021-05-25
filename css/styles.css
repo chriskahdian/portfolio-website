@@ -6,7 +6,9 @@
   }
 
 body { 
-font-family: 'Roboto', sans-serif; 
+font-family: 'Roboto', sans-serif;
+color: rgb(50, 50, 50);
+font-size: 12px;
 background-image: linear-gradient(white, rgba(232, 240, 255, 0.300), white);
 }
 
@@ -16,7 +18,7 @@ background-image: linear-gradient(white, rgba(232, 240, 255, 0.300), white);
 
 a {
   text-decoration: none;
-  color: blue;
+  color: rgb(160, 160, 255);
 }
 
 
@@ -35,7 +37,7 @@ header{
 }
 
 header a {
-  color: black;
+  color: rgb(50, 50, 50);
 }
 
 nav{
@@ -43,8 +45,8 @@ nav{
   /* min-height: 50px; */
   width: 100%;
   position: fixed;
-  background-image: linear-gradient(white, rgba(255, 252, 237,0.300));
-  backdrop-filter: blur(10px);
+  background-image: linear-gradient(white, rgb(255, 253, 253));
+  /* backdrop-filter: blur(10px); */
   text-align: center;
   /* overflow: hidden; */
   z-index: 99;
@@ -123,13 +125,18 @@ article:hover{
 
 /* ABOUT SECTION */
 
-#about{
+#aboutSectionHeading{
+  text-align: center;
+}
+
+#aboutGrid{
   margin-top: 50px;
   justify-items: center;
   align-items: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   max-width: 1019px;
+  margin: 0 auto;
 }
 
 #picture{
@@ -139,7 +146,7 @@ article:hover{
 
 #pictureCaption{
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 
 #aboutArticle{
@@ -163,16 +170,8 @@ article:hover{
 }
 
 #personalLinks a{
-  color: black;
+  color: rgb(50, 50, 50);
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -207,7 +206,7 @@ article:hover{
 .projectName{
   margin: 1.5em;
   text-align: center;
-  color: black;
+  color: rgb(50, 50, 50);
 }
 
 .projectScreenshot{
@@ -222,7 +221,7 @@ article:hover{
 }
 
 .projectName a{
-  color: black;
+  color: rgb(50, 50, 50);
 }
 
 .projectDesc{
